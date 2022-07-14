@@ -1,0 +1,65 @@
+body {
+  background: #eee;
+}
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+  font-weight: 700;
+  width: 100%;
+  height: 100px;
+  background: #fff;
+  margin-bottom: 30px;
+}
+.navbar_container {
+  background: #fff;
+  margin-bottom: 20px;
+}
+.navbar {
+  justify-content: flex-start;
+}
+.navbar li {
+  font-size: 20px;
+  margin-right: 15px;
+}
+.navbar li:hover, .navbar li:active {
+  color: rgb(42, 0, 192);
+}
+
+.form-select {
+  width: 170px;
+}
+
+.params_container {
+  background: #fff;
+  padding: 20px;
+}
+
+.cards_pagination {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  padding: 20px;
+  margin: 30px 0;
+}
+.card_descr {
+  width: 47%;
+  margin: 0 20px;
+}
+.card_descr span {
+  background: #eee;
+  margin-right: 10px;
+  padding: 5px;
+}
+.card_price {
+  font-size: 24px;
+  font-weight: 600;
+}
