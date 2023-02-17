@@ -380,6 +380,7 @@ body {
 .wrapper {
     padding: 0 70px;
     margin: 0 auto;
+    overflow: hidden;
 }
 :root {
     --bg-color-dark: #616161; 
@@ -490,10 +491,12 @@ body {
 
 .content-center__bottom {
     display: flex;
+    width: calc(100% + 20px);
     justify-content: space-between;
     margin-right: -20px;
 }
 .content-center__bottom-card {
+    display: flex;
     width: 50%;
     padding: 23px 20px;
     margin-right: 20px;
@@ -505,6 +508,7 @@ body {
 
 .footer {
     display: flex;
+    width: 100%;
     margin: 25px -28px 25px 0; 
 }
 .footer-card {
@@ -556,6 +560,29 @@ body {
   .wrapper {
     padding: 0 40px;
   }
+  .content {
+    flex-direction: column;
+  }
+  .content-left {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .content-center__bottom {
+    overflow-x: auto;
+  }
+  .content-center__bottom-card {
+    padding: 10px;
+    max-height: 250px;
+  }
+  .content-center__head__title {
+    margin-bottom: 20px;
+  }
+  .content-center__head__list {
+    margin-left: 20px;
+    margin-bottom: 25px;
+  }
+
   .header-menu {
       display: none;
   }
@@ -732,10 +759,24 @@ body {
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
+
+
+
+  .footer {
+    flex-direction: column;
+
+  }
+  .footer-card {
+    width: 100%;
+    margin-bottom: 15px;
+  }
 }
 
 @media (max-width: 481px) {
   .wrapper {
     padding: 0 20px;
+  }
+  .device-menu {
+    right: 25px;
   }
 }
